@@ -1,8 +1,14 @@
 <script setup>
+import HeroComponent from '@/components/custom/HeroComponent.vue'
+definePageMeta({
+  loading: true
+})
+
+await new Promise(resolve => setTimeout(resolve, 2000))
 </script>
 
 <template>
-    <h1>
-        the homepage
-    </h1>
+    <div class="">
+        <hero-component  />
+    </div>
 </template>
